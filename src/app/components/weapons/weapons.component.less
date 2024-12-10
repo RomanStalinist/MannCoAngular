@@ -1,0 +1,89 @@
+@import url(../../../styles.less);
+
+// Контейнер для карточек
+.cards-container {
+  gap: 16px;
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+// Стили карточек
+.example-card {
+  background-color: @card-weapon-background;
+  border: 1px solid @card-weapon-border;
+  border-radius: 8px;
+  margin: 0; // Убираем внешние отступы, заменяем на gap в контейнере
+  width: 260px;
+  height: auto; // Высота будет зависеть от содержимого
+  max-height: 400px; // Ограничение максимальной высоты карточки
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; // Равномерное распределение контента внутри карточки
+  transition: transform @transition-speed ease, box-shadow @transition-speed ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px @hover-weapon-shadow;
+  }
+
+  mat-card-header {
+    color: @text-color;
+    padding: 10px;
+  }
+
+  mat-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+
+  mat-card-subtitle {
+    font-size: 14px;
+    color: @subtitle-weapon-color;
+    margin: 0;
+  }
+
+  img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-height: 160px; // Ограничение высоты изображения
+    object-fit: cover;
+    width: 100%;
+    transition: transform @transition-speed;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  mat-card-actions {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    button {
+      background-color: @accent-weapon-color;
+      color: #FFFFFF;
+      border-radius: 4px;
+      padding: 10px 15px;
+      font-weight: bold;
+      transition: background-color @transition-speed;
+
+      &:hover {
+        background-color: lighten(@accent-weapon-color, 10%);
+      }
+
+      .btn-container {
+        display: flex;
+        align-items: center;
+
+        mat-icon {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

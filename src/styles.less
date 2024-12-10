@@ -1,1 +1,88 @@
-/* You can add global styles to this file, and also import other style files */
+// Основные переменные
+@primary-color: #2C2F33; /* Темный фон */
+@accent-color: #F28D1A; /* Оранжевый акцент */
+@secondary-color: #99AAB5; /* Светлый серый */
+@text-color: #FFFFFF; /* Белый для текста */
+@hover-color: #3B4045; /* Цвет при наведении */
+@footer-bg: #23272A; /* Фон футера */
+@font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+
+@primary-weapon-color: #171A21; // Основной фон (тёмный синий оттенок)
+@accent-weapon-color: #66C0F4; // Акцентный цвет (голубой, как в Steam)
+@card-weapon-background: #1B2838; // Фон карточек (тёмный)
+@card-weapon-border: #2A475E; // Цвет границы карточек
+@text-weapon-color: #C7D5E0; // Основной цвет текста (светлый голубой)
+@subtitle-weapon-color: #8F98A0; // Цвет для подзаголовков
+@hover-weapon-shadow: rgba(0, 0, 0, 0.8); // Тень при наведении
+@transition-speed: 0.3s; // Скорость анимации
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  color: @text-weapon-color;
+  font-family: @font-family;
+  background-color: @primary-weapon-color;
+}
+
+.root {
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  transition: all @transition-speed;
+}
+
+/* Основной стиль для хедера */
+.header {
+  top: 0;
+  color: #fff;
+  position: sticky;
+  background-color: #303030; /* Темный фон для хедера */
+
+  .company-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF6A13; /* Оранжевый цвет, похожий на бренд Mann Co. */
+  }
+
+  .toolbar {
+    display: flex;
+    justify-content: flex-end;
+
+    .nav-link {
+      color: #FF6A13; /* Оранжевый цвет для ссылок */
+      margin-left: 15px;
+      font-weight: 500;
+      text-transform: uppercase;
+
+      &:hover {
+        color: #FFD700; /* Золотистый цвет на hover */
+      }
+    }
+  }
+
+  .little-spacer {
+    margin-right: 5px;
+  }
+
+  .big-spacer {
+    flex-grow: 1;
+  }
+}
+
+/* Футер */
+.footer {
+  color: #ccc;
+  padding: 10px 0;
+  font-size: 14px;
+  text-align: center;
+  background-color: #222; /* Темный фон для футера */
+
+  .footer-info {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #999;
+  }
+}

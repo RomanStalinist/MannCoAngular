@@ -1,0 +1,111 @@
+@import url(../../../styles.less);
+
+.weapon-detail {
+  display: flex;
+  justify-content: space-between; /* Разделяем блоки */
+  align-items: flex-start; /* Выравниваем по верху */
+  padding: 20px;
+  background-color: #171A21; /* Тёмный фон */
+  color: #C7D5E0; /* Основной текст */
+  gap: 20px; /* Расстояние между колонками */
+}
+
+.detail-card {
+  flex: 1; /* Занимает часть ширины */
+  background-color: #1B2838; /* Фон карточки */
+  border: 1px solid #2A475E;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 40%; /* Ограничиваем ширину */
+}
+
+.detail-card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: transform @transition-speed;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.detail-card h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.detail-card p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.detail-card button {
+  width: 100%;
+  margin-top: 20px;
+  background-color: @accent-weapon-color;
+  color: #FFFFFF;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.detail-card button:hover {
+  background-color: #4A9FCF;
+}
+
+.modifications {
+  flex: 1; /* Занимает оставшуюся часть */
+  max-width: 50%; /* Ограничиваем ширину */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Отступы между элементами */
+}
+
+.modifications h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.modification-list {
+  display: flex;
+  flex-wrap: wrap; /* Перенос строк */
+  gap: 10px; /* Расстояние между кнопками */
+  justify-content: center; /* Центрируем */
+}
+
+.modification-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1B2838;
+  border: 1px solid #2A475E;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modification-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.modification-button img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.modification-button span {
+  font-size: 14px;
+  text-align: center;
+  color: #C7D5E0;
+}

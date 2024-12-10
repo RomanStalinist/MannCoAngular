@@ -1,5 +1,11 @@
 # MannCoStore
 
+## Полезные знания:
+
+1. Чтобы запустить сервер, используем `ng serve`
+2. Чтобы запустить json-бд, используем `npx json-server --watch db.json`
+3. Для генерации разных модулей и компонентов используется плагин Angular Schematics
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
 
 ## Development server

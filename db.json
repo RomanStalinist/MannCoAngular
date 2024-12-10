@@ -1,0 +1,67 @@
+{
+  "weapons": [
+    {
+      "id": 1,
+      "name": "Обрез",
+      "type": "Первичное",
+      "class": "Разведчик",
+      "preview": "https://th.bing.com/th/id/R.c9b29f40c15824f71f3fb51fcfa98d02?rik=mgJWs54ZLNE%2b3Q&riu=http%3a%2f%2fstatic2.wikia.nocookie.net%2f__cb20130703013035%2fteamfortress%2fimages%2fd%2fd8%2fScattergun_item_icon_TF2.png&ehk=re4IXwNCV%2b241qFvxEiPyxCOwnSCpVw2NZR4ppeZ6Lc%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+      "modifications": [
+        {
+            "name": "Обрез",
+            "image": "https://th.bing.com/th/id/R.c9b29f40c15824f71f3fb51fcfa98d02?rik=mgJWs54ZLNE%2b3Q&riu=http%3a%2f%2fstatic2.wikia.nocookie.net%2f__cb20130703013035%2fteamfortress%2fimages%2fd%2fd8%2fScattergun_item_icon_TF2.png&ehk=re4IXwNCV%2b241qFvxEiPyxCOwnSCpVw2NZR4ppeZ6Lc%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"
+        },
+        {
+            "name": "Праздничный обрез",
+            "image": "https://vignette3.wikia.nocookie.net/teamfortress/images/2/2a/Item_icon_Festive_Scattergun.png/revision/latest?cb=20140411115231"
+        },
+        {
+            "name": "Обрез из австралия",
+            "image": "https://vignette3.wikia.nocookie.net/teamfortress/images/1/1e/Item_icon_Australium_Scattergun.png/revision/latest?cb=20140427103348"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ракетомет",
+      "type": "Первичное",
+      "class": "Солдат",
+      "preview": "https://th.bing.com/th/id/R.309d5e7cc1358b33ea5e66fd46dbccca?rik=OQFgYq%2f61%2fNWXQ&pid=ImgRaw&r=0",
+      "modifications": [
+          {
+              "name": "Ракетомет",
+              "image": "https://th.bing.com/th/id/R.309d5e7cc1358b33ea5e66fd46dbccca?rik=OQFgYq%2f61%2fNWXQ&pid=ImgRaw&r=0"
+          },
+          {
+              "name": "Праздничный ракетомет",
+              "image": "https://community.fastly.steamstatic.com/economy/image/fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZULUrsm1j-9xgEIUxUeXhDnrDRCncblBfeeN_gNmskK6ZFH3jMlxQB-beDhZm4wdAWaA6QMCaM_9Vq4DCY37cRhA4Pi9u0Ce1_u59OTMK5sbo9DLK_0ug/360fx360f"
+          },
+          {
+              "name": "Ракетомет из австралия",
+              "image": "https://th.bing.com/th/id/R.864a8bdc684d981f82df7edd1d58c511?rik=kRs9BHz48BK7WQ&riu=http%3a%2f%2fcdn.steamcommunity.com%2feconomy%2fimage%2fSi0lI985tMqfNqSZqCMNl_Jh75KbSbqKS_h3g0zFRTCDJhLYhiXy2D_vuGeOQ1EZ6ma01pVWuo5N83CRTcFuJ40oCdKFLOHINaKzbZEzVwb2ccSOwBTyggCtf9RQjgM303oD08Qi44k48eps2wgDXa13qoSQUqzXG_182wHXV2yEZRLZlg%3d%3d&ehk=OpDvjYcViiOgkgvIxX%2fIaeb5SseSaU%2bLyTed2sjxjag%3d&risl=&pid=ImgRaw&r=0"
+          }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Огнемет",
+      "type": "Первичное",
+      "class": "Поджигатель",
+      "preview": "https://th.bing.com/th/id/R.76d185b2eb7a9a5a646042501c310e5e?rik=BXc97yC2OLN3vQ&pid=ImgRaw&r=0",
+      "modifications": [
+        {
+            "name": "Огнемет",
+            "image": "https://th.bing.com/th/id/R.76d185b2eb7a9a5a646042501c310e5e?rik=BXc97yC2OLN3vQ&pid=ImgRaw&r=0"
+        },
+        {
+            "name": "Праздничный огнемет",
+            "image": "https://steamcdn-a.akamaihd.net/apps/440/icons/c_flamethrower_xmas_large.cea6f0550b3fecdc8a264888b24ffcfedc4a47de.png"
+        },
+        {
+            "name": "Огнемет из австралия",
+            "image": "https://th.bing.com/th/id/R.e4ea8579611b092abe573cd85954050f?rik=g31tMNLXh82Yjg&pid=ImgRaw&r=0"
+        }
+      ]
+    }
+  ]
+}

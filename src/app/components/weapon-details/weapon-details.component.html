@@ -1,0 +1,23 @@
+<div class="weapon-detail">
+  <!-- Левая часть - информация об оружии -->
+  <div class="detail-card">
+    <img alt="{{weapon.name}}" src="{{weapon.preview}}">
+    <h1>{{weapon.name}}</h1>
+    <p>Класс: {{weapon.class}}</p>
+    <button mat-button routerLink="/weapons">Назад</button>
+  </div>
+
+  <!-- Правая часть - кнопки для выбора стиля -->
+  <div class="modifications">
+    <h2>Модификации</h2>
+    <div class="modification-list">
+      <div
+        class="modification-button"
+        *ngFor="let mod of weapon.modifications"
+        (click)="selectModification(mod)">
+        <img alt="{{mod.name}}" src="{{mod.image}}">
+        <span>{{mod.name}}</span>
+      </div>
+    </div>
+  </div>
+</div>
