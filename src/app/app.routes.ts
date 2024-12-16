@@ -4,12 +4,14 @@ import { BaseComponent } from './components/base/base.component';
 import { WeaponDetailsComponent } from './components/weapon-details/weapon-details.component';
 import { WeaponsComponent } from './components/weapons/weapons.component';
 import { weaponsResolver } from './services/weapons.resolver';
+import { CartComponent } from './components/cart/cart.component';
 
 export const routes: Routes = [
   {path: '', component: BaseComponent},
   {path: 'weapons', component: WeaponsComponent},
   {path: 'weapon/:id', component: WeaponDetailsComponent, resolve: {data: weaponsResolver}},
-  { path: '**', redirectTo: '', component: BaseComponent}
+  {path: 'cart', component: CartComponent},
+  {path: '**', redirectTo: '', component: BaseComponent}
 ];
 
 @NgModule({

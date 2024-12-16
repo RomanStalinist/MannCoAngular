@@ -1,0 +1,18 @@
+<div class="cart-container">
+  <h2>Ваша корзина</h2>
+  <div *ngIf="cartItems.length === 0" class="empty-cart">
+    Корзина пуста.
+  </div>
+  <div *ngFor="let item of cartItems" class="cart-item">
+    <div class="cart-item-image">
+      <img [src]="item.weapon.preview" alt="{{ item.weapon.name }}">
+    </div>
+    <div class="cart-item-details">
+      <h3 class="cart-item-title">{{ item.weapon.name }}</h3>
+      <p class="cart-item-quantity">Количество: {{ item.quantity }}</p>
+      <button mat-button class="cart-item-remove" (click)="removeFromCart(item.weapon.id)">
+        Удалить
+      </button>
+    </div>
+  </div>
+</div>

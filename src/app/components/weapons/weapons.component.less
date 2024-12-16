@@ -61,10 +61,13 @@
 
   mat-card-actions {
     display: flex;
+    flex-direction: column; // Изменяем направление на вертикальное
     justify-content: center;
     padding: 10px;
+    gap: 8px; // Добавляем отступ между кнопками
 
     button {
+      width: 100%;
       background-color: @accent-weapon-color;
       color: #FFFFFF;
       border-radius: 4px;

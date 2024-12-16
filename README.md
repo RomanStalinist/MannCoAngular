@@ -1,5 +1,8 @@
 # MannCoStore
 
+Проект запускается с помощью:
+`ng serve` и `npx json-server --watch db.json`
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
 
 ## Development server

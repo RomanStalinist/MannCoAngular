@@ -1,3 +1,4 @@
+import { CartService } from './../../services/cart.service';
 import { RouterLink } from '@angular/router';
 import { WeaponsService } from './../../services/weapons.service';
 import { Component, OnDestroy, OnInit } from '@angular/core';
@@ -19,7 +20,8 @@ export class WeaponsComponent implements OnInit, OnDestroy {
   weapons: IWeapon[];
   weaponsSubscription: Subscription
 
-  constructor(private WeaponsService: WeaponsService) { }
+  constructor(private WeaponsService: WeaponsService,
+    private CartService: CartService) { }
 
   ngOnInit(): void {
     this.weaponsSubscription = this.WeaponsService.getWeapons()
@@ -30,4 +32,7 @@ export class WeaponsComponent implements OnInit, OnDestroy {
     this.weaponsSubscription?.unsubscribe();
   }
 
+  addToCart(weapon: IWeapon) {
+    this.CartService.addToCart(weapon);
+  }
 }

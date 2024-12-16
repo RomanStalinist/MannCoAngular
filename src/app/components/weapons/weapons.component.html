@@ -6,10 +6,16 @@
     </mat-card-header>
     <img mat-card-image alt="{{weapon.name}}" src="{{weapon.preview}}">
     <mat-card-actions>
-      <button mat-button style="width: 100%" [routerLink]="['/weapon', weapon.id]">
+      <button mat-button class="full-width" [routerLink]="['/weapon', weapon.id]">
         <div class="btn-container">
           <mat-icon>more</mat-icon>
           <span>Подробнее</span>
+        </div>
+      </button>
+      <button mat-button class="full-width" (click)="addToCart(weapon)">
+        <div class="btn-container">
+          <mat-icon>shopping_cart</mat-icon>
+          <span>Добавить в корзину</span>
         </div>
       </button>
     </mat-card-actions>
